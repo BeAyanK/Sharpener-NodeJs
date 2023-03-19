@@ -1,15 +1,12 @@
-const fun = (a, b) => a * b;
+const arr = ['apple', 'oranges', ' ', 'mango', ' ', 'lemon']
 
-console.log(`Product: `, fun(2, 3))
+const newArr = arr.map(item => {
+  if (item === ' '){
+    return 'empty string'
+  }  
+  else{
+    return item
+  }
+})
 
-let student = {
-    name: "Raj",
-    age: 23,
-    result: `Pass`,
-
-    getResult () {
-        console.log(`${this.name}'s result is ${this.result}`);
-    }
-}
-
-student.getResult();
+console.log(newArr)
