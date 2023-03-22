@@ -45,4 +45,4 @@ const requestHandler = (request, response) => {
 
 //Method 4
 exports.handler= requestHandler;
-exports.someText = 'Some hard-coded text';
+exports.someText = 'Another hard-coded text';
